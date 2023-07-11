@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro JS</title>
+    <style>
+        body {
+            background-color: rgb(93, 191, 236);
+            color: white; /* Comentários em CSS */
+            font: normal 20spt Arial;
+        }
+        h1 { 
+            color: rgb(111, 253, 16);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1> <!-- Comentário em HTML-->
+    <p>Já me livrei da maldição!!</p>
+    <script>
+       var n1 = Number(window.prompt('digite um número: ')) //O comando window.prompt sempre retorna uma string e não número
+       var n2 = Number(window.prompt('digite outro número: ')) //Usamos o comando Number.parseInt para fazer o JS interpretar o valor como número inteiro
+       /* Se quisermos utilizar números fracionários devemos utilizar o comando Number.parseFloat */
+       /* Se utilizar o comando Number(N) o JS decide sozinho o que definir */
+       var s = n1 + n2 // É preciso fazer uma conversão de string para número
+       //window.alert('Á soma dos valores é '+ String(s)) //Concatena e converte para uma String
+       // (number + number) para adição
+       // (string + string) para concatenação
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+       // s.length - informa quantos caracteres a string tem
+       // s.toUpperCase() - converte tudo para letra maiúscula
+       // s.toLowerCase() - converte tudo para letras minúsculas
+ </script>
+</body>
+</html>

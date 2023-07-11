@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body {
+         background: rgb(164, 247, 178);
+         color: rgb(88, 9, 236);
+         font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        //Cria uma variável corpo
+        
+        var p1 = window.document.getElementsByTagName('p') [1]
+        //para pegar e exibir um elemento pela TagName no parágrafo 1 ou 2)
+
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'green'
+        
+        //d.innerText = 'Estou aguardando...'
+        //muda o text
+        
+        var d = window.document.querySelector('div#msg')
+        //Toda DIV é representada por um # e toda Classe é representada por um ponto (.)
+        
+        //var d = window.document.querySelector('div.msg')
+        //<div classe="msg">Clique em mim</div>
+        
+        d.style.background = 'blue'
+
+        //window.document.getElementById('msg').innerText = 'Olá!'
+        //Comando completo
+        
+        //window.document.write('Está escrito assim: '+ p1.innerText)
+        //O comando innerText pega o texto que está dentro do primeiro ou segundo parágrafo
+        
+        //corpo.style.background = 'black'
+        //Altera p background para preto
+        
+        //p1.style.color='pink'
+        //Para mudar a cor do parágrafo que determinei no getElements
+        
+        //window.document.write('Olá Mundo!')
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+        
+        //document.write(p1.innerText)
+        //O texto aparece sem formatação
+        
+        //document.write(p1.innerHTML)
+        //O texto aparece com formatação (pega o HTML todo com os filhos)
+        
+        //window.alert(p1.innerText)
+    </script>
+</body>
+</html>

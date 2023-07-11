@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Análise de Nacionalidade</h1>
+    Digite o seu país de nascimento: <input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id= "res">
+
+    </div>
+    <script>
+    function verificar(){
+    var txt = window.document.querySelector('input#txtpa')
+    var res = window.document.querySelector('div#res')
+    var pais = (txtpa.value)
+    if (pais == 'Brasil'){
+            res.innerHTML += '<p>Você é <strong>Brasileiro</strong></p>'
+        }
+    else {
+            res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong></p>'
+        }
+        res.innerHTML += `<p>Você é do país ${pais}</p>`
+    }
+</script>
+</body>
+</html>
